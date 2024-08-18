@@ -8,7 +8,11 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
-        // your code goes here
+        if(isVeg == true){
+            this.price = 300;
+        }else{
+            this.price = 400;
+        }
     }
 
     public int getPrice(){
@@ -16,19 +20,26 @@ public class Pizza {
     }
 
     public void addExtraCheese(){
-        // your code goes here
+        this.price = this.price + 80;
+        System.out.println("Extra Cheese Added: 80");
     }
 
     public void addExtraToppings(){
-        // your code goes here
+        this.price = this.price + 70;
+        System.out.println("Extra Toppings Added: 70");
     }
 
     public void addTakeaway(){
-        // your code goes here
+        this.price = this.price + 20;
+        System.out.println("Paperbag Added: 20");
     }
 
     public String getBill(){
-        // your code goes here
+        this.bill = "Total Price: "+this.price;
         return this.bill;
+    }
+
+    protected void setPrice(int i) {
+        this.price = i;
     }
 }
