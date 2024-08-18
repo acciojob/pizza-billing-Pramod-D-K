@@ -3,8 +3,7 @@ package com.driver;
 public class Main {
   public static void main(String[] args) {
     Pizza dp = new Pizza(true);
-    System.out.println("Base Price Of The Pizza: "+dp.getPrice());
-//    dp.addTakeaway();
+    dp.getPrice();
     dp.addExtraCheese();
     dp.addExtraToppings();
     dp.addTakeaway();
