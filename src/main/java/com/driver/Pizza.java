@@ -21,17 +21,17 @@ public class Pizza {
 
     public void addExtraCheese(){
         this.price = this.price + 80;
-        //System.out.println("Extra Cheese Added: 80");
+        System.out.println("Extra Cheese Added: 80");
     }
 
     public void addExtraToppings(){
         this.price = this.price + 70;
-        //System.out.println("Extra Toppings Added: 70");
+        System.out.println("Extra Toppings Added: 70");
     }
 
     public void addTakeaway(){
         this.price = this.price + 20;
-       // System.out.println("Paperbag Added: 20");
+        System.out.println("Paperbag Added: 20");
     }
 
     public String getBill(){

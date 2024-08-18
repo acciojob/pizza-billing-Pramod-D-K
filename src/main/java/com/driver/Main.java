@@ -10,11 +10,10 @@ public class Main {
     dp.addTakeaway();
     System.out.println(dp.getBill());
 
-    DeluxePizza p = new DeluxePizza(true);
+    DeluxePizza p = new DeluxePizza(false);
     System.out.println("Base Price Of The Pizza: "+p.getPrice());
     p.addExtraCheese();
     p.addExtraToppings();
-    p.addTakeaway();
     System.out.println(p.getBill());
   }
 }
